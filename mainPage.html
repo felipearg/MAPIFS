@@ -9,13 +9,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <style>
     .leaflet-popup-content-wrapper {
-      background-color: rgb(255, 255, 255);
+      background-color: #ffffffb2;
     }
 
     .leaflet-control-layers-expanded {
       background-color: #ffffffb2;
       background-size: 100%;
-      background-image: url("images/x.png");
+      background-image: url("icons/invisivel.webp");
       transition-property: opacity;
       transition-duration: 1s;
       opacity: 70%;
@@ -111,10 +111,107 @@
     $.getJSON("geojson/Ammu-Nation.json", function(data) {
       ammunation.addData(data).addTo(map);
     });
+    //teste
+    var clothing = L.geoJson(null, {
+      pointToLayer: function(feature, latlng) {
+        //Create icon for marker
+        var icn = L.icon({
+          iconUrl: 'icons/clothingstore.png',
+          iconSize: [48, 48],
+        });
+        var marker = L.marker(latlng, {
+          icon: icn
+        });
+        marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
+        return marker;
+      }
+    })
+    $.getJSON("geojson/Clothing Stores.json", function(data) {
+      clothing.addData(data);
+    });
 
+    var tennis = L.geoJson(null, {
+      pointToLayer: function(feature, latlng) {
+        //Create icon for marker
+        var icn = L.icon({
+          iconUrl: 'icons/tennis.png',
+          iconSize: [48, 48],
+        });
+        var marker = L.marker(latlng, {
+          icon: icn
+        });
+        marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
+        return marker;
+      }
+    })
+    $.getJSON("geojson/Tennis.json", function(data) {
+      tennis.addData(data);
+    });
+
+    var golf = L.geoJson(null, {
+      pointToLayer: function(feature, latlng) {
+        //Create icon for marker
+        var icn = L.icon({
+          iconUrl: 'icons/golf.png',
+          iconSize: [48, 48],
+        });
+        var marker = L.marker(latlng, {
+          icon: icn
+        });
+        marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
+        return marker;
+      }
+    })
+    $.getJSON("geojson/Golf.json", function(data) {
+      golf.addData(data);
+    });
+
+    var stripclub = L.geoJson(null, {
+      pointToLayer: function(feature, latlng) {
+        //Create icon for marker
+        var icn = L.icon({
+          iconUrl: 'icons/stripclub.png',
+          iconSize: [48, 48],
+        });
+        var marker = L.marker(latlng, {
+          icon: icn
+        });
+        marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
+        return marker;
+      }
+    })
+    $.getJSON("geojson/Strip Club.json", function(data) {
+      stripclub.addData(data);
+    });
     //Create titles for each layer with mini icons to add to the Control
     var overlay = {
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> Ammu-Nation": ammunation,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 01  Campo de Futebol": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 02 Ginásio Poliesportivo": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 03 Coord de Ed Física": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 04 Garagem": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 05 Coord de Ciências da Natureza ": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 06 Sala de Extensão da PROPEX ": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 07 Coord de Saúde Escolar ": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 08 Pav. de Química e Alimentos ": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 09 Pav de Eletrônica ": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 10 Pav de Engenharia Civil ": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 11 Pav de Eletrotécnica ": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 12 Coord de Registro Escolar ": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 13 Sala 42 a 45": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 14  Pav de Informática": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 15  Escadas - Sala 1s a 8s": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 16  CCDD": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 17  Sala 9 a 16": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 18  Refeitório": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 19  Biblioteca": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 20  Escada - Sala 101 a 207": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 21  Coord de Ciências Humanas e Socias": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 22  Grêmio Estudantil e DCE": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 23  Cord de Saneamento Ambiental": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 24  Pav Administrativo": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> IFS  Sala de Estudos Biblioteca": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> Pracinha do ifs": stripclub,
+
     };
     //Create titles for each baselayer to add to the Control
     var baseLayers = {
@@ -122,10 +219,9 @@
     }
     //Create Control layer and add to map
     var over = L.control.layers(baseLayers, overlay, {
-      collapsed: true,
-      sortLayers: true,
- 
-    }).To(map);
+      collapsed: false,
+      sortLayers: true
+    }).addTo(map);
 
 
     //Add IFS logo to lower left hand corner
