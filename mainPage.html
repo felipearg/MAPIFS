@@ -170,11 +170,11 @@
       golf.addData(data);
     });
 
-    var stripclub = L.geoJson(null, {
+    var variavel = L.geoJson(null, {
       pointToLayer: function(feature, latlng) {
         //Create icon for marker
         var icn = L.icon({
-          iconUrl: 'icons/stripclub.png',
+          iconUrl: 'icons/variavel.png',
           iconSize: [48, 48],
         });
         var marker = L.marker(latlng, {
@@ -185,36 +185,36 @@
       }
     })
     $.getJSON("geojson/Strip Club.json", function(data) {
-      stripclub.addData(data);
+      variavel.addData(data);
     });
     //Create titles for each layer with mini icons to add to the Control
     var overlay = {
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 01  Campo de Futebol": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 02 Ginásio Poliesportivo": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 03 Coord de Ed Física": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 04 Garagem": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 05 Coord de Ciências da Natureza ": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 06 Sala de Extensão da PROPEX ": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 07 Coord de Saúde Escolar ": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 08 Pav. de Química e Alimentos ": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 09 Pav de Eletrônica ": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 10 Pav de Engenharia Civil ": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 11 Pav de Eletrotécnica ": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 12 Coord de Registro Escolar ": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 13 Sala 42 a 45": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 14  Pav de Informática": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 15  Escadas - Sala 1s a 8s": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 16  CCDD": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 17  Sala 9 a 16": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 18  Refeitório": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 19  Biblioteca": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 20  Escada - Sala 101 a 207": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 21  Coord de Ciências Humanas e Socias": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 22  Grêmio Estudantil e DCE": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 23  Cord de Saneamento Ambiental": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 24  Pav Administrativo": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> IFS  Sala de Estudos Biblioteca": stripclub,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> Pracinha do ifs": stripclub,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 01  Campo de Futebol": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 02 Ginásio Poliesportivo": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 03 Coord de Ed Física": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 04 Garagem": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 05 Coord de Ciências da Natureza ": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 06 Sala de Extensão da PROPEX ": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 07 Coord de Saúde Escolar ": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 08 Pav. de Química e Alimentos ": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 09 Pav de Eletrônica ": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 10 Pav de Engenharia Civil ": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 11 Pav de Eletrotécnica ": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 12 Coord de Registro Escolar ": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 13 Sala 42 a 45": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 14  Pav de Informática": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 15  Escadas - Sala 1s a 8s": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 16  CCDD": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 17  Sala 9 a 16": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 18  Refeitório": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 19  Biblioteca": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 20  Escada - Sala 101 a 207": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 21  Coord de Ciências Humanas e Socias": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 22  Grêmio Estudantil e DCE": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 23  Cord de Saneamento Ambiental": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 24  Pav Administrativo": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> IFS  Sala de Estudos Biblioteca": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> Pracinha do ifs": variavel,
 
     };
     //Create titles for each baselayer to add to the Control
