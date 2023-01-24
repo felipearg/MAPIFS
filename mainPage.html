@@ -98,7 +98,7 @@
     map.setMaxBounds(bounds)
 
     // Load each layer from it's corresponding GeoJSON file
-    var ammunation = L.geoJson(null, {
+    var lcl = L.geoJson(null, {
       pointToLayer: function(feature, latlng) {
         //Create icon for marker
         var icn = L.icon({
@@ -112,114 +112,45 @@
         return marker;
       }
     })
-    $.getJSON("geojson/Ammu-Nation.json", function(data) {
-      ammunation.addData(data).addTo(map);
-    });
-    //teste
-    var clothing = L.geoJson(null, {
-      pointToLayer: function(feature, latlng) {
-        //Create icon for marker
-        var icn = L.icon({
-          iconUrl: 'icons/clothingstore.png',
-          iconSize: [48, 48],
-        });
-        var marker = L.marker(latlng, {
-          icon: icn
-        });
-        marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
-        return marker;
-      }
-    })
-    $.getJSON("geojson/Clothing Stores.json", function(data) {
-      clothing.addData(data);
+    $.getJSON("geojson/points.json", function(data) {
+      lcl.addData(data).addTo(map);
     });
 
-    var tennis = L.geoJson(null, {
-      pointToLayer: function(feature, latlng) {
-        //Create icon for marker
-        var icn = L.icon({
-          iconUrl: 'icons/tennis.png',
-          iconSize: [48, 48],
-        });
-        var marker = L.marker(latlng, {
-          icon: icn
-        });
-        marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
-        return marker;
-      }
-    })
-    $.getJSON("geojson/Tennis.json", function(data) {
-      tennis.addData(data);
-    });
-
-    var golf = L.geoJson(null, {
-      pointToLayer: function(feature, latlng) {
-        //Create icon for marker
-        var icn = L.icon({
-          iconUrl: 'icons/golf.png',
-          iconSize: [48, 48],
-        });
-        var marker = L.marker(latlng, {
-          icon: icn
-        });
-        marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
-        return marker;
-      }
-    })
-    $.getJSON("geojson/Golf.json", function(data) {
-      golf.addData(data);
-    });
-
-    var variavel = L.geoJson(null, {
-      pointToLayer: function(feature, latlng) {
-        //Create icon for marker
-        var icn = L.icon({
-          iconUrl: 'icons/variavel.png',
-          iconSize: [48, 48],
-        });
-        var marker = L.marker(latlng, {
-          icon: icn
-        });
-        marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
-        return marker;
-      }
-    })
-    $.getJSON("geojson/Strip Club.json", function(data) {
-      variavel.addData(data);
-    });
+    var list = L.geoJson(null, {})
+   
     //Create titles for each layer with mini icons to add to the Control
     var overlay = {
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 01  Campo de Futebol": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 02 Ginásio Poliesportivo": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 03 Coord de Ed Física": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 04 Garagem": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 05 Coord de Ciências da Natureza ": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 06 Sala de Extensão da PROPEX ": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 07 Coord de Saúde Escolar ": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 08 Pav. de Química e Alimentos ": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 09 Pav de Eletrônica ": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 10 Pav de Engenharia Civil ": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 11 Pav de Eletrotécnica ": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 12 Coord de Registro Escolar ": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 13 Sala 42 a 45": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 14  Pav de Informática": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 15  Escadas - Sala 1s a 8s": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 16  CCDD": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 17  Sala 9 a 16": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 18  Refeitório": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 19  Biblioteca": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 20  Escada - Sala 101 a 207": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 21  Coord de Ciências Humanas e Socias": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 22  Grêmio Estudantil e DCE": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 23  Cord de Saneamento Ambiental": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 24  Pav Administrativo": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> IFS  Sala de Estudos Biblioteca": variavel,
-      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> Pracinha do ifs": variavel,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 01  Campo de Futebol": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 02 Ginásio Poliesportivo": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 03 Coord de Ed Física": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 04 Garagem": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 05 Coord de Ciências da Natureza ": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 06 Sala de Extensão da PROPEX ": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 07 Coord de Saúde Escolar ": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 08 Pav. de Química e Alimentos ": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 09 Pav de Eletrônica ": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 10 Pav de Engenharia Civil ": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 11 Pav de Eletrotécnica ": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 12 Coord de Registro Escolar ": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 13 Sala 42 a 45": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 14  Pav de Informática": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 15  Escadas - Sala 1s a 8s": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 16  CCDD": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 17  Sala 9 a 16": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 18  Refeitório": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 19  Biblioteca": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 20  Escada - Sala 101 a 207": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 21  Coord de Ciências Humanas e Socias": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 22  Grêmio Estudantil e DCE": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 23  Cord de Saneamento Ambiental": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> 24  Pav Administrativo": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> IFS  Sala de Estudos Biblioteca": list,
+      "<img src='icons/invisivel.webp'align='center'width='30' height='30'/> Pracinha do ifs": list,
 
     };
     //Create titles for each baselayer to add to the Control
-    var baseLayers = {
-    }
+    var baseLayers = {}
+
     //Create Control layer and add to map
     var over = L.control.layers(baseLayers, overlay, {
       collapsed: true,
@@ -240,11 +171,7 @@
     L.control.watermark = function(opts) {
       return new L.Control.Watermark(opts);
     }
-    //Add logo to map
-    L.control.watermark({
-      position: 'bottomleft'
-    }).addTo(map);
-
+ 
   </script>
 </body>
 

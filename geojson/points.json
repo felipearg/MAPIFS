@@ -1,0 +1,395 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Campo de Futebol",
+        "imgname": "images/fotos/Campo.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          700,
+          2800
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ginásio Poliesportivo",
+        "imgname": "images/fotos/Ginasio.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3012,
+          3630
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coordenação de Educação Física",
+        "imgname": "images/fotos/COEFE.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3012,
+          4210
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garagem do Instituto",
+        "imgname": "images/fotos/Garagem.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3699,
+          3630
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coordenação de Ciências da Natureza",
+        "imgname": "images/fotos/CCNAT.JPG",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4312.125,
+          3670.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sala de Expansão PROPEX",
+        "imgname": "images/fotos/Propex.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4521,
+          2838.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coordenação de Saúde Escolar",
+        "imgname": "images/fotos/COSE.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4473.5,
+          4641.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavilhão de Química e Alimentos",
+        "imgname": "images/fotos/COQUI.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4951.625,
+          3670.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavilhão de Eletrônica",
+        "imgname": "images/fotos/COELT.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5551.625,
+          3670.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavilhão de Engenharia Civil",
+        "imgname": "images/fotos/COEC.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6151.625,
+          3670.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavilhão de Eletrotécnica",
+        "imgname": "images/fotos/COELT.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6751.625,
+          3670.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coordenação de Registro Escolar",
+        "imgname": "images/fotos/CRE.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7181.625,
+          4070.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salas 42 a 45",
+        "imgname": "images/fotos/40s.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7421.625,
+          3285.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavilhão de Informática",
+        "imgname": "images/fotos/COINF.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7498.25,
+          5990.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Escada - Sala 1s a 8s",
+        "imgname": "images/fotos/ESCADAS_S.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6998.25,
+          6231.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CCDD",
+        "imgname": "images/fotos/CCDD.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6598.25,
+          5950.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sala 9 a 16",
+        "imgname": "images/fotos/PAV_ALM.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5798.25,
+          5970.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Refeitório",
+        "imgname": "images/fotos/CURRAL.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4698.25,
+          5650.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Biblioteca",
+        "imgname": "images/fotos/BIBLIOTECA.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4910.25,
+          6167.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Escada - Sala 101 a 207",
+        "imgname": "images/fotos/ESCADAS-100.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4125.5,
+          6257.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coordenação de Ciências Humanas e Sociais",
+        "imgname": "images/fotos/CCHSI.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3798.25,
+          5450.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grêmio Estudantil e DCE",
+        "imgname": "images/fotos/GREMIO.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3798.25,
+          5990.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coordenação de Saneamento Ambiental",
+        "imgname": "images/fotos/CMA.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3239.75,
+          6090.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavilhão Administrativo",
+        "imgname": "images/fotos/PAV-ADM.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2750.25,
+          5750.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PRACINHA DO IFS",
+        "imgname": "images/fotos/nos.jpg",
+        "ptype": "Clothing Store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6898.25,
+          5290.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sala de Estudos Biblioteca",
+        "imgname": "images/fotos/SALA-DE-ESTUDOS.jpg",
+        "ptype": "Strip Club"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4610.25,
+          6167.5
+        ]
+      }
+    }
+  ]
+}
